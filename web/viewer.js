@@ -1085,6 +1085,8 @@ const PDFViewerApplication = {
   },
 
   setTitle(title) {
+    /* Stop overwritting default title of index.html */
+    return;
     if (this.isViewerEmbedded) {
       return;
     }
